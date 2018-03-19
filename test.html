@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="/index.css" rel=stylesheet>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="./es_5_0.js"></script>
+  <script src="/dist/index.min.js"></script>
+</head>
+
+<body>
+  <div id="editor_output_container">
+    
+    <div id="editor_container" class="eser_ace_container">
+      <div id="editor_actions" class="eser_ace_editor_actions">
+        <button id="btn1">测试4</button>
+        <button id="copy_as_curl">复制</button>
+        <button id="btn2">格式化</button>
+      </div>
+      <div id="editor" style="height: 500px;width:800px"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var input = window.ACE_EXT_SEARCH.init($("#editor"), $("#editor_actions"), $("#copy_as_curl"));
+  var res;
+  $("#btn1").click(function() {
+    
+    input.getRequestsInRange((req) => {
+      
+      alert(req);
+      
+    });    
+  });
+  var value = "ho";
+  $("#btn2").click(function() {
+    value += "w";
+    input.update('POST /_aliases \r{"actions":[{"add":{"index":"' + value + '","alias":""}}]}');
+    input.autoIndent();
+    //input.nextRequestEnd();
+  });
+
+  input.update('POST /_aliases \r{"actions":[{"add":{"index":"' + value + '","alias":""}}]}');
+  </script>
+</body>
+
+</html>
