@@ -16776,7 +16776,7 @@ color: rgb(109, 121, 222);\
 color: rgb(104, 118, 135);\
 }\
 .ace-tm .ace_string {\
-color: rgb(3, 106, 7);\
+color: #2DB669;\
 }\
 .ace-tm .ace_comment {\
 color: rgb(76, 136, 107);\
@@ -16788,10 +16788,10 @@ color: rgb(0, 102, 255);\
 color: rgb(128, 159, 191);\
 }\
 .ace-tm .ace_constant.ace_numeric {\
-color: rgb(0, 0, 205);\
+color: #B627B6;\
 }\
 .ace-tm .ace_variable {\
-color: rgb(49, 132, 149);\
+color: #d0d0d0 !important;\
 }\
 .ace-tm .ace_xml-pe {\
 color: rgb(104, 104, 91);\
@@ -16832,7 +16832,6 @@ border: 1px solid rgb(192, 192, 192);\
 background: rgba(0, 0, 0, 0.07);\
 }\
 .ace-tm .ace_gutter-active-line {\
-background-color : #dcdcdc;\
 }\
 .ace-tm .ace_marker-layer .ace_selected-word {\
 background: rgb(250, 250, 255);\

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev node devServer.js",
     "b": "webpack src/components/DSButton/button.jsx dist/index.js --config webpack.config.development.js",
-    "build": "webpack src/index.js dist/index.min.js --config webpack.config.production.js",
+    "build": "webpack src/index.js dist/sense.js --config webpack.config.production.js",
     "build:umd": "webpack src/index.js dist/index.js --config webpack.config.development.js",
     "build:umd:min": "webpack src/index.js dist/index.min.js --config webpack.config.production.js",
     "clean": "rimraf dist",

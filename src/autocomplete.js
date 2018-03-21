@@ -497,7 +497,7 @@ export default function (editor) {
   }
 
   function addMethodAutoCompleteSetToContext(context) {
-    context.autoCompleteSet = ["GET", "PUT", "POST", "DELETE", "HEAD"].map((m, i) => ({
+    context.autoCompleteSet = ["GET",  "HEAD"].map((m, i) => ({
       name: m,
       score: -i,
       meta: 'method'
